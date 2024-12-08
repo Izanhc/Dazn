@@ -1,0 +1,132 @@
+/* Para páginas fullscreen sin barra de desplamiento */
+html, body {
+    height: 100%;
+    overflow: hidden;
+}
+
+/* Definición de la fuente local */
+@font-face {
+    font-family: "DAZNTrim";
+    src: url("../font/DAZN.woff2");
+}
+
+/* Tamaño de la caja de borde a borde 
+padding y borde no modifica el tamaño del elemento
+*/
+* {
+    box-sizing: border-box;
+}
+
+/* Reglas comunes a todos los elementos en body 
+margin:0 para quitar ese pequeño enmarcado blanco indeseable
+*/
+body {
+    margin: 0;
+    font-family: "DAZNTrim";
+    color: white;
+}
+
+/* flex orientación row */
+.row {
+    display: flex;
+}
+
+/* Alineación eje principal; en row -> Horizontal = (center)*/
+.justify-content-center {
+    justify-content: center;
+}
+
+/* Alineación eje principal; en row -> Horizontal
+space beetween = 1º y ultimo en izq y der resto reparten espacio
+*/
+.justify-content-between {
+    justify-content: space-between;
+}
+
+/* Alineación eje secundario; en row -> Vertical (center)*/
+.align-items-center {
+    align-items: center;
+}
+
+.bg-black {
+    background-color: #0c161c;
+}
+
+header {
+    padding: 10px;
+}
+
+.btn {
+    border: 0;
+}
+
+.btn-grey {
+    background-color: rgb(61, 60, 60);
+    color: white;
+    font-weight: bold;
+    padding: 10px 20px;
+}
+
+main {
+    width: 40%;
+    margin: 0 auto;
+    margin-top: 50px;
+    text-align: center;
+}
+
+input {
+    width: 60%;
+}
+
+.btn-yellow {
+    background-color: yellow;
+    color: black;
+    font-weight: bold;
+    font-size: 15px;
+    padding: 20px 20px;
+}
+
+.box-form {
+    background-color: transparent;
+    border: 0;
+    border-bottom: solid 1px gray;
+    margin: 18px 0;
+}
+
+/* pseudoelemento ::placeholder para cambiar diseño del mismo */
+.box-form::placeholder {
+    font-size: 13px;
+}
+
+a {
+    color: white;
+}
+
+footer {
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding-bottom: 20px;
+}
+
+footer ul, footer li {
+    margin: 0;
+    padding: 0;
+}
+
+footer li {
+    list-style: none;
+    display: inline;
+    margin: 0 6px;
+}
+
+.text-gray {
+    color: gray;
+}
+
+/* Cambiar color y grosor de hr mediante borde */
+hr {
+    border: solid .5px rgb(77, 77, 77);   
+    margin: 14px 10px;
+}
